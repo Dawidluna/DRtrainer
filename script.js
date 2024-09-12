@@ -19,6 +19,7 @@ function generate() {
         var index = moves - movesLeft;
         scramble[index] = moveList[Math.floor(Math.random() * moveList.length)];
         if(scramble[index][0] == scramble[index - 1][0]) movesLeft++;
+        else if(index == 1 && scramble[index] == "L2") movesLeft++;
         else if((scramble[index][0] == 'R' && scramble[index - 1][0] == 'L') || (scramble[index][0] == 'L' && scramble[index - 1][0] == 'R') || (scramble[index][0] == 'F' && scramble[index - 1][0] == 'B') || (scramble[index][0] == 'B' && scramble[index - 1][0] == 'F') || (scramble[index][0] == 'U' && scramble[index - 1][0] == 'D') || (scramble[index][0] == 'D' && scramble[index - 1][0] == 'U')) {
             if(opposites) movesLeft++;
             else opposites = true;
