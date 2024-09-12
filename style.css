@@ -1,0 +1,20 @@
+#main {
+    border: 2px solid #d03cde;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 80px;
+}
+
+#moves {
+    margin-bottom: 10px;
+}
+
+#scramble {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#savedList {
+    margin: 10px;
+}

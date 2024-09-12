@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DR trainer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <input type="range" id="moves" min="3" max="8" value="4" oninput="updateMoves(this.value)">
+        <span id="movesText">4</span> moves<br>
+        <button onclick="generate()">Generate (space)</button>
+        <button onclick="save()">Save (s)</button><br>
+        <p id="scramble"></p>
+    </div>
+    <div id ="savedList">
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
